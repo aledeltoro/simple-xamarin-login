@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleLogin.MainPage"
+             IconImageSource="bandcamp_logotype">
+
+    <StackLayout BackgroundColor="#1ea0c4">
+        <Image Source="bandcamp_logotype"/>
+        <Entry x:Name="email"
+               Keyboard="Email"
+               TextTransform="Lowercase" 
+               Placeholder="email"
+               PlaceholderColor="#9bd7e7"
+               TextColor="#ffffff"/>
+        
+        <Entry x:Name="password" 
+               IsPassword="True" 
+               Placeholder="password"
+               PlaceholderColor="#9bd7e7"
+               TextColor="#ffffff"
+               VerticalOptions="Center"/>
+
+        <Button Text="Log in"
+                BackgroundColor="#096f88"
+                TextColor="#9bd7e7"
+                Clicked="OnLoginButtonClick"
+                VerticalOptions="Center"/>
+
+    </StackLayout>
+
+</ContentPage>
