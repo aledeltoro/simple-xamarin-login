@@ -24,16 +24,17 @@ namespace SimpleLogin
             if (areFieldsFull)
             {
                 await DisplayAlert("Welcome!", $"Hey {email.Text}!", "Ok");
+                return;
             }
 
             if (isEmailEmpty)
             {
-                await DisplayAlert("Error", "Campo email cannot be empty", "Ok");
+                await DisplayAlert("Error", "Field 'email' cannot be empty", "Ok");
             }
 
             if (isPasswordEmpty)
             {
-                await DisplayAlert("Error", "Campo password cannot be empty", "Ok");
+                await DisplayAlert("Error", "Field 'password' cannot be empty", "Ok");
             }
         }
     }

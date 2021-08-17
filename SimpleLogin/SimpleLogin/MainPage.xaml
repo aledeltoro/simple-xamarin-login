@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SimpleLogin.MainPage"
-             IconImageSource="bandcamp_logotype">
+             BackgroundColor="#1ea0c4">
 
-    <StackLayout BackgroundColor="#1ea0c4">
+    <StackLayout Padding="30, -50, 30, 0" VerticalOptions="Center">
         <Image Source="bandcamp_logotype"/>
+        
         <Entry x:Name="email"
                Keyboard="Email"
                TextTransform="Lowercase" 
@@ -17,14 +18,27 @@
                IsPassword="True" 
                Placeholder="password"
                PlaceholderColor="#9bd7e7"
-               TextColor="#ffffff"
-               VerticalOptions="Center"/>
+               TextColor="#ffffff"/>
 
         <Button Text="Log in"
                 BackgroundColor="#096f88"
                 TextColor="#9bd7e7"
-                Clicked="OnLoginButtonClick"
-                VerticalOptions="Center"/>
+                CornerRadius="5"
+                Clicked="OnLoginButtonClick"/>
+
+        <Label HorizontalOptions="Center">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Forgot your password?"
+                          TextColor="#9bd7e7"/>
+                    <Span Text=" | "
+                          TextColor="#9bd7e7" />
+                    <Span Text="Sign up for an account" 
+                          FontAttributes="Bold"
+                          TextColor="#9bd7e7"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
 
     </StackLayout>
 
