@@ -7,14 +7,14 @@
     <StackLayout Padding="30, -50, 30, 0" VerticalOptions="Center">
         <Image Source="bandcamp_logotype"/>
         
-        <Entry x:Name="email"
+        <Entry x:Name="emailEntry"
                Keyboard="Email"
                TextTransform="Lowercase" 
                Placeholder="email"
                PlaceholderColor="#9bd7e7"
                TextColor="#ffffff"/>
         
-        <Entry x:Name="password" 
+        <Entry x:Name="passwordEntry" 
                IsPassword="True" 
                Placeholder="password"
                PlaceholderColor="#9bd7e7"

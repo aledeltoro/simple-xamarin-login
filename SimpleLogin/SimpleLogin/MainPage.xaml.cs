@@ -17,13 +17,13 @@ namespace SimpleLogin
 
         private async void OnLoginButtonClick(object sender, EventArgs e)
         {
-            bool isEmailEmpty = string.IsNullOrEmpty(email.Text);
-            bool isPasswordEmpty = string.IsNullOrEmpty(password.Text);
+            bool isEmailEmpty = string.IsNullOrEmpty(emailEntry.Text);
+            bool isPasswordEmpty = string.IsNullOrEmpty(passwordEntry.Text);
             bool areFieldsFull = !isEmailEmpty && !isPasswordEmpty;
 
             if (areFieldsFull)
             {
-                await DisplayAlert("Welcome!", $"Hey {email.Text}!", "Ok");
+                await DisplayAlert("Welcome!", $"Hey {emailEntry.Text}!", "Ok");
                 return;
             }
 
